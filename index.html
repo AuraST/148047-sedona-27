@@ -1,152 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Седона</title>
-</head>
-
-<body>
-	<header>
-		<nav>
-			<div class="header-nav">
-				<a href="">Информация</a>
-				<a href="">Фото и видео</a>
-				<a href="">Карта штата</a>
+	<body>
+		<header>
+			<nav class="header-nav">
+				<a href="#">Информация</a>
+				<a href="#">Фото и видео</a>
+				<a href="#">Карта штата</a>
 				<a href="inner.html">Гостиницы</a>
-			</div>
-		</nav>
+			</nav>
 
-		<a class="header-logo" href="">
-			<img src="img/logo-sedona.svg" alt="Логотип города">
-		</a>
-	</header>
+			<a class="header-logo" href="" aria-current="page">
+				<img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
+			</a>
+		</header>
 
-	<main>
-		<h1 class="hidden">Город Sedona</h1>
-		<section class="welcome">
-			<img src="img/intro-welcome.svg" alt="Текст приветствия">
-		</section>
+		<main class="container">
+			<h1 class="hidden">Город Седона</h1>
 
-		<section>
-			<h2 class="hidden">Приемущества города</h2>
-			<div>
-				<p>
-				Седона — небольшой городок в Аризоне,
-				заслуживающий большего!
-				</p>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			<div class="welcome">
+				<span class="visually-hidden">Добро пожаловать в великолепную Седону, потому что Большой Каньон отстой!</span>
 			</div>
 
-			<ul class="advantages">
-				<li class="advantages-item">
-					<div class="advantages-item__block info">
-						<p class="info__title">Настоящий городок</p>
-						<p class="info__number">№1</p>
-						<p class="info__text">
-							Седона — не аттракцион для туристов, там течёт своя жизнь
-						</p>
-					</div>
-					<img class="advantages-item__img" alt="Фотография городка">
-				</li>
-				<li class="advantages-item">
-					<div class="advantages-item__block info">
-						<img class="info__img" alt="Иконка дома">
-						<p class="info__title">Жильё</p>
-						<p class="info__text">
-							Рекомендуем пожить в настоящем мотеле, всё как в кино!
-						</p>
-					</div>
-					<div class="advantages-item__block info">
-						<img class="info__img" alt="Иконка еды">
-						<p class="info__title">Еда</p>
-						<p class="info__text">
-							Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-						</p>
-					</div>
-					<div class="advantages-item__block info">
-						<img class="info__img" alt="Иконка подарка">
-						<p class="info__title">Сувениры</p>
-						<p class="info__text">
-							Не только китайского, но и местного производства!
-						</p>
-					</div>
-				</li>
-				<li class="advantages-item">
-					<img class="advantages-item__img" alt="Фотография моста Дьявола">
-					<div class="advantages-item__block info">
-						<p class="info__title">Там есть Мост дьявола</p>
-						<p class="info__number">№2</p>
-						<p class="info__text">
-							Да, по нему можно пройти! Если конечно вы осмелитесь
-						</p>
-					</div>
-				</li>
-				<li class="advantages-item">
-					<div class="advantages-item__block info">
-						<p class="info__title">Небольшая площадь</p>
-						<p class="info__number">№3</p>
-						<p class="info__text">
-							Все достопримечательности находятся очень близко
-						</p>
-					</div>
-					<div class="advantages-item__block info">
-						<p class="info__title">Красивая дорога</p>
-						<p class="info__number">№4</p>
-						<p class="info__text">
-							Ехать в Седону из Лас-Вегаса совсем не скучно!
-						</p>
-					</div>
-					<div class="advantages-item__block info">
-						<p class="info__title">Мало туристов</p>
-						<p class="info__number">№5</p>
-						<p class="info__text">
-							Большинство едет в гранд каньон и толпится там
-						</p>
-					</div>
-				</li>
-			</ul>
-		</section>
+			<section class="advantages">
+				<h2 class="hidden">Приемущества города</h2>
+				<div class="advantages-block">
+					<p class="advantages-block__title">
+						Седона — небольшой городок в Аризоне,
+						заслуживающий большего!
+					</p>
+					<p class="advantages-block__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
 
-		<section>
-			<h3>Заинтересовались?</h3>
-			<p>Укажите предполагаемые даты поездки,
-				и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<button class="toggle-form-search" type="button">Поиск гостиницы в седоне</button>
-			<form></form>
-			<img src="img/map.png" alt="Карта Седоны">
-		</section>
-	</main>
+				<ol class="advantages-list">
+					<li class="advantages-item">
+						<div class="advantages-item__block info">
+							<p class="info__title">Настоящий городок</p>
+							<p class="info__number">№1</p>
+							<p class="info__text">
+								Седона — не аттракцион для туристов, там течёт своя жизнь
+							</p>
+						</div>
+						<img class="advantages-item__img" src="img/sedona_foto.jpg" alt="Фотография городка">
+					</li>
+					<li class="advantages-item">
+						<img class="advantages-item__img" src="img/devil_bridge.jpg" alt="Фотография моста Дьявола">
+						<div class="advantages-item__block info">
+							<p class="info__title">Там есть Мост дьявола</p>
+							<p class="info__number">№2</p>
+							<p class="info__text">
+								Да, по нему можно пройти! Если конечно вы осмелитесь
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<div class="advantages-item__block info">
+							<p class="info__title">Небольшая площадь</p>
+							<p class="info__number">№3</p>
+							<p class="info__text">
+								Все достопримечательности находятся очень близко
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<div class="advantages-item__block info">
+							<p class="info__title">Красивая дорога</p>
+							<p class="info__number">№4</p>
+							<p class="info__text">
+								Ехать в Седону из Лас-Вегаса совсем не скучно!
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<div class="advantages-item__block info">
+							<p class="info__title">Мало туристов</p>
+							<p class="info__number">№5</p>
+							<p class="info__text">
+								Большинство едет в гранд каньон и толпится там
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<ul class="advantages-also">
+							<li class="advantages-item__block info">
+								<div class="info__icon info__icon--home"></div>
+								<p class="info__title">Жильё</p>
+								<p class="info__text">
+									Рекомендуем пожить в настоящем мотеле, всё как в кино!
+								</p>
+							</li>
+							<li class="advantages-item__block info">
+								<div class="info__icon info__icon--food"></div>
+								<p class="info__title">Еда</p>
+								<p class="info__text">
+									Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+								</p>
+							</li>
+							<li class="advantages-item__block info">
+								<div class="info__icon info__icon--surprise"></div>
+								<p class="info__title">Сувениры</p>
+								<p class="info__text">
+									Не только китайского, но и местного производства!
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</section>
 
-	<footer>
-		<div class="footer-contact">
-			<p>#visitSEDONA</p>
-			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
-		</div>
+			<section class="registration">
+				<h3>Заинтересовались?</h3>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<button class="toggle-form-search" type="button">Поиск гостиницы в седоне</button>
 
-		<div class="social-links">
-			<a class="social-links__link" href="twitter.com" target="_blank" title="Наш Твитер">
-				<span class="visually-hidden">Наша страница в Twitter</span>
-				<img src="img/twitter.svg" alt="Логотип Твиттера">
-			</a>
-			<a class="social-links__link" href="facebook.com" target="_blank" title="Наш Фейсбук">
-				<span class="visually-hidden">Наша группа в Facebook</span>
-				<img src="img/twitter.svg" alt="Логотип Фейсбука">
-			</a>
-			<a class="social-links__link" href="youtube.com" target="_blank" title="Наш Youtube">
-				<span class="visually-hidden">Наш канал на Youtube</span>
-				<img src="img/twitter.svg" alt="Логотип Youtube">
-			</a>
-		</div>
+				<form class="registration-form" action="#" method="POST">
+					<p class="registration-form__field field">
+						<label class="field__label" for="input-date-arrival">Дата заезда:</label>
+						<input class="field__input" id="input-date-arrival" type="date" name="date_arrival" value="2017-04-24">
+					</p>
+					<p class="registration-form__field field">
+						<label class="field__label" for="input-date-departure">Дата выезда:</label>
+						<input class="field__input" id="input-date-departure" type="date" name="date_departure" value="2017-07-04">
+					</p>
+					<p class="registration-form__field field">
+						<label class="field__label" for="input-count-adults">Взрослые:</label>
+						<button class="field__button-plus" type="button" aria-label="Увеличить количество"></button>
+						<input class="field__input" id="input-count-adults" type="number" min="1" name="count-adults">
+						<button class="field__button-minus" type="button" aria-label="Уменьшить количество"></button>
+					</p>
+					<p class="registration-form__field field">
+						<label class="field__label" for="input-count-kids">Дети:</label>
+						<button class="field__button-plus" type="button" aria-label="Увеличить количество"></button>
+						<input class="field__input" id="input-count-kids" type="number" min="0" name="count-kids">
+						<button class="field__button-minus" type="button" aria-label="Уменьшить количество"></button>
+					</p>
+					<button class="registration-form__button button" type="submit">Найти</button>
+				</form>
 
-		<div class="footer-creator">
-			<p>Website by
-				<a href="htmlacademy.ru" target="_blank" rel="nofollow">
-					<img src="img/logo-htmlacademy.svg" alt="Перейти на страницу html academy">
+				<img class="registration__image" src="img/map.png" alt="Карта Седоны">
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-contact">
+				<p>#visitSEDONA</p>
+				<a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+			</div>
+
+			<div class="social-links">
+				<a class="social-links__link social-links__link-twitter" href="#" target="_blank">
+					<span class="visually-hidden">Наша страница в Twitter</span>
 				</a>
-			</p>
-		</div>
-	</footer>
-</body>
+				<a class="social-links__link social-links__link-facebook" href="#" target="_blank">
+					<span class="visually-hidden">Наша группа в Facebook</span>
+				</a>
+				<a class="social-links__link social-links__link-youtube" href="#" target="_blank">
+					<span class="visually-hidden">Наш канал на Youtube</span>
+				</a>
+			</div>
 
+			<div class="footer-creator">
+				<p>Website by
+					<a class="footer-creator__logo" href="https://www.htmlacademy.ru" target="_blank" rel="nofollow">
+						<span class="visually-hidden">Html Academy</span>
+					</a>
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
