@@ -51,8 +51,6 @@ a {
 }
 
 .welcome {
-    width: 100%;
-    height: 510px;
     background-color: #e2eff7;
     background-image: url("../img/intro-welcome.svg"), url("../img/polygon_welcome.svg"), url("../img/back_welcome.jpg");
     background-position: center, bottom, center;
@@ -72,6 +70,41 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+}
+
+.advantages-item .advantages-item__block {
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+.advantages-item__block .info__title {
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.advantages-item__block .info__number,
+.advantages-item__block .info__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.advantages-item:first-child .advantages-item__block,
+.advantages-item:nth-child(2) .advantages-item__block {
+    background-color: #81b3d2;
+    color: #fff;
+}
+
+.advantages-item:first-child .info__title,
+.advantages-item:nth-child(2) .info__title {
+    color: #fff;
+}
+
+.advantages-also .advantages-item__block {
+    background-color: #fff;
 }
 
 .registration h3 {
@@ -155,6 +188,80 @@ a {
 
 .footer-creator__logo:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.filters__form {
+    background-image: url("../img/back_welcome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.filters__form legend {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.filters__form input,
+.filters__form label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.filters__form input::placeholder {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.filters__form .form-filter__button {
+    background-color: transparent;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    border: 2px solid #fff;
+}
+
+.filters__form .form-filter__button:hover,
+.filters__form .form-filter__button:active {
+    background-color: #fff;
+    color: #000;
+}
+
+.sorting__block {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sorting .sorting__result {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.sorting__block .sorting__link {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__block .sorting__link:hover {
+    border-bottom-color: #81b3d2;
+    color: #81b3d2;
+}
+
+.sorting__block .sorting__link:active {
+    color: #000;
+    border-bottom: none;
+}
+
+.sorting__block .sorting__link--current {
+    color: #81b3d2;
+    border-bottom: none;
 }
 
 .item-hotel .info-hotel__name {
