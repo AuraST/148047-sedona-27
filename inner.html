@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -11,7 +14,7 @@
 				<a href="#">Информация</a>
 				<a href="#">Фото и видео</a>
 				<a href="#">Карта штата</a>
-				<a href="" aria-current="page">Гостиницы</a>
+				<a class="current" href="" aria-current="page">Гостиницы</a>
 			</nav>
 
 			<a class="header-logo" href="index.html">
@@ -89,25 +92,25 @@
                 <li class="hotel__item">
                     <article class="item-hotel">
                         <img class="item-hotel__foto" src="img/hotel_1.jpg" width="135" height="90" alt="Фотография отеля «Amara Resort & Spa»">
-                        <div class="item-hotel__info">
-                            <h1>Amara Resort & Spa</h1>
-                            <div class="item-hotel__info-features">
+                        <div class="item-hotel__info info-hotel">
+                            <a class="info-hotel__name" href="#" target="_blank">Amara Resort & Spa</h1>
+                            <div class="info-hotel__features">
                                 <span>Гостиницы</span>
                                 <span>от 4000 Р.</span>
                             </div>
-                            <div class="item-hotel__info-links">
-                                <a class="button" href="#" target="_blank">Подробнее</a>
-                                <a class="button" href="#" target="_blank">Забронировать</a>
+                            <div class="info-hotel__links">
+                                <a class="button info-hotel__links-detail" href="#" target="_blank">Подробнее</a>
+                                <a class="button info-hotel__links-reserve" href="#" target="_blank">Забронировать</a>
                             </div>
                         </div>
                         <div class="item-hotel__rating">
-                            <div class="stars">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
+                            <div class="item-hotel__rating-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <p class="count">
+                            <p class="item-hotel__rating-count">
                                 Рейтинг: 8,5
                             </p>
                         </div>
@@ -117,24 +120,24 @@
                 <li class="hotel__item">
                     <article class="item-hotel">
                         <img class="item-hotel__foto" src="img/hotel_2.jpg" width="135" height="90" alt="Фотография отеля «Desert Quail Inn»">
-                        <div class="item-hotel__info">
-                            <h1>Desert Quail Inn</h1>
-                            <div class="item-hotel__info-features">
+                        <div class="item-hotel__info info-hotel">
+                            <a class="info-hotel__name" href="#" target="_blank">Desert Quail Inn</h1>
+                            <div class="info-hotel__features">
                                 <span>Мотель</span>
                                 <span>от 3000 Р.</span>
                             </div>
-                            <div class="item-hotel__info-links">
-                                <a class="button" href="#" target="_blank">Подробнее</a>
-                                <a class="button" href="#" target="_blank">Забронировать</a>
+                            <div class="info-hotel__links">
+                                <a class="button info-hotel__links-detail" href="#" target="_blank">Подробнее</a>
+                                <a class="button info-hotel__links-reserve" href="#" target="_blank">Забронировать</a>
                             </div>
                         </div>
                         <div class="item-hotel__rating">
-                            <div class="stars">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
+                            <div class="item-hotel__rating-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <p class="count">
+                            <p class="item-hotel__rating-count">
                                 Рейтинг: 8,9
                             </p>
                         </div>
@@ -144,23 +147,23 @@
                 <li class="hotel__item">
                     <article class="item-hotel">
                         <img class="item-hotel__foto" src="img/hotel_3.jpg" width="135" height="90" alt="Фотография отеля «Villas at Poco Diablo»">
-                        <div class="item-hotel__info">
-                            <h1>Villas at Poco Diablo</h1>
-                            <div class="item-hotel__info-features">
+                        <div class="item-hotel__info info-hotel">
+                            <a class="info-hotel__name" href="#" target="_blank">Villas at Poco Diablo</a>
+                            <div class="info-hotel__features">
                                 <span>Апартаменты</span>
                                 <span>от 2000 Р.</span>
                             </div>
-                            <div class="item-hotel__info-links">
-                                <a class="button" href="#" target="_blank">Подробнее</a>
-                                <a class="button" href="#" target="_blank">Забронировать</a>
+                            <div class="info-hotel__links">
+                                <a class="button info-hotel__links-detail" href="#" target="_blank">Подробнее</a>
+                                <a class="button info-hotel__links-reserve" href="#" target="_blank">Забронировать</a>
                             </div>
                         </div>
                         <div class="item-hotel__rating">
-                            <div class="stars">
-                                <span>1</span>
-                                <span>2</span>
+                            <div class="item-hotel__rating-stars">
+                                <span></span>
+                                <span></span>
                             </div>
-                            <p class="count">
+                            <p class="item-hotel__rating-count">
                                 Рейтинг: 9,2
                             </p>
                         </div>
@@ -169,7 +172,7 @@
             </ul>
         </main>
 
-        <footer>
+        <footer class="footer">
             <div class="footer-contact">
                 <p>#visitSEDONA</p>
                 <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
