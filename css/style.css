@@ -225,6 +225,7 @@ a {
 .footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgba(256, 256, 256, 0.9);
 }
 
@@ -276,6 +277,7 @@ a {
 }
 
 .filters__form {
+    display: flex;
     background-image: url("../img/back_welcome.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -287,6 +289,10 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
+}
+
+.filters__form fieldset:last-child {
+    margin-left: auto;
 }
 
 .filters__form input,
@@ -303,6 +309,9 @@ a {
 }
 
 .filters__form .form-filter__button {
+    display: block;
+    width: 133px;
+    margin: 0 auto;
     background-color: transparent;
     color: inherit;
     font-size: 14px;
@@ -315,6 +324,11 @@ a {
 .filters__form .form-filter__button:active {
     background-color: #fff;
     color: #000;
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
 }
 
 .sorting__block {
@@ -349,6 +363,10 @@ a {
     border-bottom: none;
 }
 
+.sorting__type {
+    margin-left: auto;
+}
+
 .hotel__list {
     list-style: none;
     margin: 0;
@@ -357,6 +375,12 @@ a {
 
 .item-hotel {
     display: flex;
+}
+
+.item-hotel__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item-hotel .info-hotel__name {
@@ -416,6 +440,9 @@ a {
 }
 
 .item-hotel__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: auto;
 }
 
