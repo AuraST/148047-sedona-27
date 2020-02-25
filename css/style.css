@@ -331,6 +331,7 @@ a {
 
 .registration-form__field .field__input {
     width: 346px;
+    height: 38px;
     padding: 4px 10px;
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
@@ -339,6 +340,10 @@ a {
     font-weight: 700;
     box-shadow: none;
     outline: none;
+}
+
+.registration-form__field .field__label {
+    margin-right: auto;
 }
 
 .registration-form__field .field__input::placeholder {
@@ -422,18 +427,11 @@ a {
 
 .field--adults {
     width: 226px;
-    justify-content: flex-end;
 }
 
 .field--kids {
     width: 39%;
     margin-left: auto;
-    justify-content: flex-end;
-}
-
-.field--adults .field__label,
-.field--kids .field__label {
-    margin-right: auto;
 }
 
 .registration-form .registration-form__button {
@@ -458,10 +456,9 @@ a {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     background-color: rgba(256, 256, 256, 0.9);
-    padding: 30px 0;
+    padding: 30px 100px 30px 130px;
 }
 
 .footer.bottom--absolute {
@@ -480,12 +477,14 @@ a {
 }
 
 .footer-contact p {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
-.footer .social-links {
+.social-links {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-links .social-links__link {
@@ -557,7 +556,7 @@ a {
 
 .filters-field {
     margin: 0;
-    margin-right: 120px;
+    margin-right: 118px;
     padding: 0;
     border: none;
 }
@@ -566,10 +565,11 @@ a {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 23px;
 }
 
 .filters-field:last-child {
+    width: 317px;
     margin-left: auto;
     margin-right: 0;
 }
@@ -577,7 +577,7 @@ a {
 .filters-field__block {
     position: relative;
     margin-top: 16px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .filters-field__block:last-child {
@@ -614,6 +614,14 @@ a {
     background-image: url("../img/checkbox-on.svg");
 }
 
+.filters-field__checkbox:disabled + label::before {
+    background-image: url("../img/checkbox-off-dis.svg");
+}
+
+.filters-field__checkbox:disabled:checked + label::before {
+    background-image: url("../img/checkbox-on-dis.svg");
+}
+
 .filters-field__checkbox {
     display: none;
 }
@@ -629,6 +637,7 @@ a {
 }
 
 .filters-field__number {
+    width: 50%;
     height: 100%;
     color: #fff;
     text-align: center;
@@ -636,6 +645,13 @@ a {
     border: none;
     box-shadow: none;
     outline: none;
+    -moz-appearance: textfield;
+}
+
+.filters-field__number::-webkit-inner-spin-button, 
+.filters-field__number::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 .filters-field__block-numbers::after {
@@ -650,21 +666,21 @@ a {
 }
 
 .filters-field__block-range {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
-.filters-field__block-range .scale {
+.filters-field__block-range .range__scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
 }
 
-.filters-field__block-range .bar {
+.filters-field__block-range .range__bar {
     width: 80%;
     height: 2px;
     background: #fff;
 }
 
-.filters-field__block-range .range-toggle {
+.filters-field__block-range .range__toggle {
     position: absolute;
     top: -9px;
     width: 5px;
@@ -676,27 +692,27 @@ a {
     cursor: pointer;
 }
 
-.filters-field__block-range .range-toggle:hover {
+.filters-field__block-range .range__toggle:hover {
     transform: scale(1.1);
 }
 
-.filters-field__block-range .range-toggle:hover {
+.filters-field__block-range .range__toggle:hover {
     background: #1c4f80;
 }
 
-.filters-field__block-range .range-toggle-min {
+.filters-field__block-range .range__toggle-min {
     left: 0;
 }
 
-.filters-field__block-range .range-toggle-max {
+.filters-field__block-range .range__toggle-max {
     left: 80%;
 }
 
 .filters .filters__button {
     display: block;
-    width: 133px;
+    width: 136px;
     margin: 0 auto;
-    padding: 6px 5px;
+    padding: 5px;
     border-radius: 2px;
     background-color: transparent;
     color: inherit;
@@ -830,7 +846,7 @@ a {
     vertical-align: middle;
 }
 
-.info-hotel .features-hotel__type {
+.info-hotel__features .features-hotel__type {
     display: inline-block;
     width: 110px;
 }
@@ -885,6 +901,7 @@ a {
 
 .item-hotel__rating-stars span {
     display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 17px;
     margin-left: 2px;
