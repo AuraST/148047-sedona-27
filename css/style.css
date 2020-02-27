@@ -124,10 +124,10 @@ a {
 .welcome {
     height: 508px;
     background-color: #c2d5e0;
-    background-image: url("../img/polygon_welcome.svg"), url("../img/back_welcome.jpg");
-    background-position: bottom, center;
+    background-image: url("../img/welcome-back.jpg");
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain, cover;
+    background-size: cover;
 }
 
 .welcome img {
@@ -431,6 +431,7 @@ a {
     position: absolute;
     left: 0;
     top: 0;
+    border: none;
     z-index: 2;
 }
 
