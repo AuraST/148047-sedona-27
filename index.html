@@ -21,7 +21,7 @@
 				</nav>
 
 				<div class="header-logo">
-					<a class="header-logo__link" href="" aria-current="page">
+					<a class="header-logo__link" aria-current="page">
 						<img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
 					</a>
 				</div>
@@ -45,7 +45,7 @@
 					</div>
 
 					<ol class="advantages-list">
-						<li class="advantages-item">
+						<li class="advantages-item advantages-item--blue">
 							<div class="advantages-item__block info">
 								<p class="info__title">Настоящий городок</p>
 								<p class="info__number">– №1 –</p>
@@ -53,10 +53,10 @@
 									Седона — не аттракцион для туристов, там течёт своя жизнь
 								</p>
 							</div>
-							<img class="advantages-item__img" src="img/sedona_foto.jpg" width="800" height="256" alt="Фотография городка">
+							<img class="advantages-item__img" src="img/sedona-foto.jpg" width="800" height="256" alt="Фотография городка">
 						</li>
-						<li class="advantages-item">
-							<img class="advantages-item__img" src="img/devil_bridge.jpg" width="800" height="256" alt="Фотография моста Дьявола">
+						<li class="advantages-item advantages-item--blue">
+							<img class="advantages-item__img" src="img/devil-bridge.jpg" width="800" height="256" alt="Фотография моста Дьявола">
 							<div class="advantages-item__block info">
 								<p class="info__title">Там есть Мост дьявола</p>
 								<p class="info__number">– №2 –</p>
@@ -123,7 +123,7 @@
 						<p class="registration__block-desc">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 						<button class="button toggle-form-search" type="button">Поиск гостиницы в седоне</button>
 
-						<form class="registration-form registration-form--show" action="#" method="POST">
+						<form class="registration-form registration-form--show" action="#" method="GET">
 							<div class="registration-form__field field">
 								<label class="field__label" for="input-date-arrival">Дата заезда:</label>
 								<input class="field__input" id="input-date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017">
@@ -169,8 +169,10 @@
 
 			<footer class="footer bottom--absolute">
 				<div class="footer-contact">
-					<p>#visitSEDONA</p>
-					<a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+					<address>
+						<p>#visitSEDONA</p>
+						<a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+					</address>
 				</div>
 
 				<div class="social-links">

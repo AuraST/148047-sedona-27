@@ -16,7 +16,7 @@
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Фото и видео</a></li>
 						<li><a href="#">Карта штата</a></li>
-						<li><a class="current" href="" aria-current="page">Гостиницы</a></li>
+						<li><a class="current" aria-current="page">Гостиницы</a></li>
 					</ul>
 				</nav>
 
@@ -31,37 +31,41 @@
                 <h1 class="visually-hidden">Список гостиниц города Седона</h1>
 
                 <div class="filters">
-                    <form action="#" method="POST"> 
+                    <form action="#" method="GET"> 
                         <fieldset class="filters-field">
                             <legend>Инфраструктура:</legend>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="infra-swimpool" type="checkbox" name="infra-check" value="Бассейн" checked>
-                                <label for="infra-swimpool">Бассейн</label>
-                            </div>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="infra-parking" type="checkbox" name="infra-check" value="Парковка">
-                                <label for="infra-parking">Парковка</label>
-                            </div>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="infra-wifi" type="checkbox" name="infra-check" value="Wi-Fi">
-                                <label for="infra-wifi">Wi-Fi</label>
-                            </div>
+                            <ul class="filters-field__blocks">
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="infra-swimpool" type="checkbox" name="infra-check" value="Бассейн" checked>
+                                    <label for="infra-swimpool">Бассейн</label>
+                                </li>
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="infra-parking" type="checkbox" name="infra-check" value="Парковка">
+                                    <label for="infra-parking">Парковка</label>
+                                </li>
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="infra-wifi" type="checkbox" name="infra-check" value="Wi-Fi">
+                                    <label for="infra-wifi">Wi-Fi</label>
+                                </li>
+                            </ul>
                         </fieldset>
 
                         <fieldset class="filters-field">
                             <legend>Тип жилья:</legend>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="typehousing-hotel" type="checkbox" name="typehousing-check" value="Гостиница" checked>
-                                <label for="typehousing-hotel">Гостиница</label>
-                            </div>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="typehousing-motel" type="checkbox" name="typehousing-check" value="Мотель" checked>
-                                <label for="typehousing-motel">Мотель</label>
-                            </div>
-                            <div class="filters-field__block">
-                                <input class="filters-field__checkbox" id="typehousing-flat" type="checkbox" name="typehousing-check" value="Апартаменты" checked>
-                                <label for="typehousing-flat">Апартаменты</label>
-                            </div>
+                            <ul class="filters-field__blocks">
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="typehousing-hotel" type="checkbox" name="typehousing-check" value="Гостиница" checked>
+                                    <label for="typehousing-hotel">Гостиница</label>
+                                </li>
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="typehousing-motel" type="checkbox" name="typehousing-check" value="Мотель" checked>
+                                    <label for="typehousing-motel">Мотель</label>
+                                </li>
+                                <li class="filters-field__block">
+                                    <input class="filters-field__checkbox visually-hidden" id="typehousing-flat" type="checkbox" name="typehousing-check" value="Апартаменты" checked>
+                                    <label for="typehousing-flat">Апартаменты</label>
+                                </li>
+                            </ul>
                         </fieldset>
 
                         <fieldset class="filters-field">
@@ -77,8 +81,8 @@
                                 <div class="range__scale">
                                     <div class="range__bar"></div>
                                 </div>
-                                <div class="range__toggle range__toggle-min"></div>
-                                <div class="range__toggle range__toggle-max"></div>
+                                <div class="range__toggle range__toggle-min" tabindex="0"></div>
+                                <div class="range__toggle range__toggle-max" tabindex="0"></div>
                             </div>
                             <button class="button filters__button" type="submit">Показать</button>
                         </fieldset>
@@ -110,7 +114,7 @@
                 <ul class="hotel__list">
                     <li class="hotel__item">
                         <article class="item-hotel">
-                            <img class="item-hotel__foto" src="img/hotel_1.jpg" width="135" height="90" alt="Фотография отеля «Amara Resort & Spa»">
+                            <img class="item-hotel__foto" src="img/hotel-amara-rs.jpg" width="135" height="90" alt="Фотография отеля «Amara Resort & Spa»">
                             <div class="item-hotel__info info-hotel">
                                 <a class="info-hotel__name" href="#" target="_blank">Amara Resort & Spa</a>
                                 <div class="info-hotel__features features-hotel">
@@ -123,7 +127,7 @@
                                 </div>
                             </div>
                             <div class="item-hotel__rating">
-                                <div class="item-hotel__rating-stars">
+                                <div class="item-hotel__rating-stars" aria-label="Отель 4 звезды">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -138,7 +142,7 @@
 
                     <li class="hotel__item">
                         <article class="item-hotel">
-                            <img class="item-hotel__foto" src="img/hotel_2.jpg" width="135" height="90" alt="Фотография отеля «Desert Quail Inn»">
+                            <img class="item-hotel__foto" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Фотография отеля «Desert Quail Inn»">
                             <div class="item-hotel__info info-hotel">
                                 <a class="info-hotel__name" href="#" target="_blank">Desert Quail Inn</a>
                                 <div class="info-hotel__features">
@@ -151,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="item-hotel__rating">
-                                <div class="item-hotel__rating-stars">
+                                <div class="item-hotel__rating-stars" aria-label="Отель 3 звезды">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -165,7 +169,7 @@
 
                     <li class="hotel__item">
                         <article class="item-hotel">
-                            <img class="item-hotel__foto" src="img/hotel_3.jpg" width="135" height="90" alt="Фотография отеля «Villas at Poco Diablo»">
+                            <img class="item-hotel__foto" src="img/hotel-villas.jpg" width="135" height="90" alt="Фотография отеля «Villas at Poco Diablo»">
                             <div class="item-hotel__info info-hotel">
                                 <a class="info-hotel__name" href="#" target="_blank">Villas at Poco Diablo</a>
                                 <div class="info-hotel__features">
@@ -178,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="item-hotel__rating">
-                                <div class="item-hotel__rating-stars">
+                                <div class="item-hotel__rating-stars" aria-label="Отель 2 звезды">
                                     <span></span>
                                     <span></span>
                                 </div>
@@ -191,10 +195,12 @@
                 </ul>
             </main>
 
-            <footer class="footer">
+            <footer class="footer footer--hotels">
                 <div class="footer-contact">
-                    <p>#visitSEDONA</p>
-                    <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+                    <address>
+						<p>#visitSEDONA</p>
+						<a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+					</address>
                 </div>
 
                 <div class="social-links">
